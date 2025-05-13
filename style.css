@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 255, 34) ;
+  margin-bottom: 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 3px solid #1cd334;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #5ad16a;
+}
+
+.card img {
+  width: 100%;
+  cursor: pointer;
+}
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+.card p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #1cd334;
+}
+
+.centrado {
+  text-align: center;
+  margin-top: 20px;
+}
+
+main.layout-dos {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav principal";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fdf6e3;
+}
+
+header {
+  grid-area: header;
+  background-color: #268bd2;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #eee8d5;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #268bd2;
+  font-weight: bold;
+}
+
+#principal {
+  grid-area: principal;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navegacion {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.navegacion button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  background-color: #268bd2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navegacion button:hover {
+  background-color: #0f5a8a;
+}
+
+.card {
+  border: 2px solid #657b83;
+  border-radius: 4px;
+  background-color: #fdf6e3;
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #073642;
+}
+
+.card p {
+  color: #586e75;
+}
+
+button {
+  background-color: #2aa198;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
